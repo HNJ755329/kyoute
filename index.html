@@ -11,7 +11,7 @@
 <div class="card">
     <div class="hero">
         <h1>
-            📊 共通テスト 偏差値シミュレーター
+            共通テスト 偏差値シミュレーター
             <span>過去問対応</span>
         </h1>
         <p>あなたの得点を入力すると、設定した統計データから偏差値を算出します</p>
@@ -19,37 +19,35 @@
     <div class="content">
         <!-- 得点入力エリア -->
         <div class="input-group">
-            <label>📝 あなたの得点 (0〜満点の範囲)</label>
+            <label>あなたの得点 (0〜満点の範囲)</label>
             <div class="input-row">
-                <input type="number" id="yourScore" placeholder="例: 72" value="68" step="0.5">
+                <input type="number" id="yourScore" placeholder="例: 72" value="68" step="1">
                 <span class="unit">点 / 100点満点中</span>
             </div>
-            <div class="hint">※ 満点は任意ですが、平均点や標準偏差と整合させてください</div>
         </div>
 
         <!-- 平均点・分散（標準偏差）入力エリア -->
         <div class="param-flex">
             <div class="param-card">
-                <label>📈 過去の平均点</label>
+                <label>過去の平均点</label>
                 <input type="number" id="avgScore" value="55.0" step="0.1" placeholder="平均点">
             </div>
             <div class="param-card">
-                <label>📉 標準偏差 (σ)</label>
+                <label>標準偏差 (σ)</label>
                 <input type="number" id="stdDev" value="15.2" step="0.1" placeholder="標準偏差">
             </div>
         </div>
         
         <!-- 補足説明：分散からでも計算できるように -->
-        <div style="display: flex; justify-content: space-between; margin-top: -12px; margin-bottom: 18px; gap: 12px; flex-wrap: wrap; font-size: 0.7rem;">
             <div style="background:#eef2f7; border-radius: 20px; padding: 6px 12px;">
-                🔍 標準偏差 = √分散 &nbsp;&nbsp; <span id="showVarianceHint">分散: 231.04</span>
+                標準偏差 = √分散 <span id="showVarianceHint">分散: 231.04</span>
             </div>
             <div style="background:#eef2f7; border-radius: 20px; padding: 6px 12px;">
                 <span id="errorWarn" style="color:#b45309;"></span>
             </div>
         </div>
 
-        <button class="calc-btn" id="calcBtn">⚡ 偏差値を計算する ⚡</button>
+        <button class="calc-btn" id="calcBtn">偏差値を計算する</button>
 
         <div class="result-area" id="resultPanel">
             <div class="label-result">あなたの共通テスト 偏差値</div>
@@ -64,6 +62,6 @@
     </footer>
 </div>
 
-<script src="script.js"></script>
+<script src="dist/App.js"></script>
 </body>
 </html>

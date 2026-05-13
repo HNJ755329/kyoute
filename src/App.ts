@@ -170,7 +170,7 @@ class DeviationCalculator {
     const diffComment = diff >= 0 ? "平均より上" : "平均より下";
 
     this.elements.evaluationMessage.innerText = rankMessage;
-    this.elements.extraInfoSpan.innerHTML = `📊 得点 ${yourScore.toFixed(1)}点 / 平均 ${mean.toFixed(1)}点 (${diffSign}点, ${diffComment})<br>✨ ${extraComment}`;
+    this.elements.extraInfoSpan.innerHTML = `得点 ${yourScore.toFixed(1)}点 / 平均 ${mean.toFixed(1)}点 (${diffSign}点, ${diffComment})<br>✨ ${extraComment}`;
   }
 
   // 統計情報の表示更新（分散ヒントと警告）
