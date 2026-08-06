@@ -1,2 +1,3 @@
 /rawdata
-/dist
+# /dist
+*.tsbuildinfo

@@ -1,0 +1,10 @@
+{
+  "scripts": {
+    "build": "tsc --build",
+    "watch": "tsc --watch",
+    "start": "serve dist",
+    "test": "jest",
+    "lint": "eslint . --ext .ts",
+    "format": "prettier --write ."
+  }
+}
